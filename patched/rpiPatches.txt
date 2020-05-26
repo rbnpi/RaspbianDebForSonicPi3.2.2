@@ -1,0 +1,18 @@
+insert at line 38 in sonic-pi-server.rb (after include SonicPi:Util
+
+
+#start compton if using Raspberry Pi: enables transparency to work
+if os==:raspberry
+  STDOUT.puts  "starting compton for RaspberryPi transparency"
+  cmd="/usr/bin/compton"
+  compton_pid = spawn("exec #{cmd}",[:out,:err]=>"/dev/null")
+  register_process(compton_pid)
+end
+
+inser into theme/app.qss at line 520 after QScrollBar section.
+
+QWidget
+{
+    background: paneColor;
+}
+
