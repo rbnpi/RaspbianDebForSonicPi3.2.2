@@ -1,4 +1,4 @@
-In the asbsence of a fully fledged source debian package for Sonic Pi on Raspbian and other Linux for the latest versions this is an attempt to create a binary deb package which is build from source autoamtically.
+In the absence of a fully fledged source debian package for Sonic Pi on Raspbian and other Linux for the latest versions this is an attempt to create a binary deb package which is build from source autoamtically.
 Alternative versions ofr other distributions eg Ubuntu 20.04 are also being developed
 
 To create a binary deb for Sonic Pi version 3.2.2
