@@ -3,6 +3,13 @@ Alternative versions ofr other distributions eg Ubuntu 20.04 are also being deve
 
 To create a binary deb for Sonic Pi version 3.2.2
 This version for Raspbian Buster
+You need an active internet connection to use these scripts
+Not included in the scripts, but a good idea to run
+```
+sudo apt update
+sudo apt upgrade
+```
+before running these scripts
 
 There are three scripts which can be run together or separately
 
@@ -18,3 +25,4 @@ sudo chmod -R pi:pi debbuild  if you want to change or move it later.
 
 The three scripts can be run without interruption using completeprocess.sh which takes about 23 minutes in total on a Pi4.
 Having separate scripts meassn you can run the initial build once, and then easily rerun the strip/patch and package scripts which are much quicker.
+
