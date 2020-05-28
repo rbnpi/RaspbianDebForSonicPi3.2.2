@@ -1,8 +1,8 @@
-In the absence of a fully fledged source debian package for Sonic Pi on Raspbian and other Linux for the latest versions this is an attempt to create a binary deb package which is build from source autoamtically.
+In the absence of a fully fledged source debian package for Sonic Pi on Raspberry Pi OS and other Linux for the latest versions this is an attempt to create a binary deb package which is build from source autoamtically.
 Alternative versions ofr other distributions eg Ubuntu 20.04 are also being developed
 
 To create a binary deb for Sonic Pi version 3.2.2
-This version for Raspbian Buster
+This version for Raspberry Pi OS
 You need an active internet connection to use these scripts
 Not included in the scripts, but a good idea to run
 ```
@@ -19,6 +19,7 @@ stripSP.sh #produces a build stripped copy in subfolder debbuild/opt of sonic-pi
 (the patches are to sonic-pi-server.rb  in /opt/app/server/ruby/bin (to enable starting of compton to facilitate the transparency command, and an addition to the theme file app.qss in /opt/app/gui/qt/theme to correct the background in load and save dialogs.
 
 preparedebbuild.sh #copies in deb files including checksums and then builds final binary deb as sonic-pi-3.2.2_1_armhf.deb (owned by root)
+The final deb filename can be adjusted to suit version number in this script, as can the control file in the DEBIAN folder
 
 note that final deb source folder debbuild is left with owner and group set to root:root
 sudo chmod -R pi:pi debbuild  if you want to change or move it later.
